@@ -20,7 +20,8 @@
                 <label for="valorB" class="form-label">Informe o valor de B:</label>
                 <input type="number" id="valor_B" name="valor_B" class="form-control" required="">
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button><br>
+            <a href="index.html">Retornar ao início</a>
         </form>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
