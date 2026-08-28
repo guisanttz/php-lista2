@@ -4,17 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Estrutura Condicional - If e Switch</title>
+    <title>Exercício 1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container py-3">
-        <h1>Estrutura Condicional - If e Switch</h1>
-        <form method="post">
+        <h1>Exercício 1</h1>
+        <form method="post" action="ex1.php">
             <div class="mb-3">
-                <label for="numero" class="form-label">Informe o número</label>
-                <input type="text" id="numero" name="numero" class="form-control" required="">
+                <label for="num1" class="form-label">Informe o primeiro número: </label>
+                <input type="number" id="num1" name="num1" class="form-control" required="">
+            </div>
+            <div class="mb-3">
+                <label for="num2" class="form-label">Informe o segundo número: </label>
+                <input type="number" id="num2" name="num2" class="form-control" required="">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
@@ -25,3 +29,16 @@
 </body>
 
 </html>
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $num1 = $_POST['num1'];
+    $num2 = $_POST['num2'];
+    $soma = $num1 + $num2;
+    if ($num1 == $num2)
+        echo "<h4>Números iguais<br>Soma: " . $soma . "<br>Triplo: " . $soma * 3 . "</h4>";
+    else
+        echo "<h4>Soma: " . $soma . "</h4>";
+}
+
+?>
