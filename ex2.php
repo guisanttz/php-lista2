@@ -29,3 +29,11 @@
 </body>
 
 </html>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    
+    $valor_A = $_POST['valor_A'];
+    $valor_A = $_POST['valor_B'];
+
+}
