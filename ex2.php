@@ -36,4 +36,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $valor_A = $_POST['valor_A'];
     $valor_A = $_POST['valor_B'];
 
+    if ($valor_A == $valor_B)
+        echo "<h4>Números iguais: " . $valor_A . "</h4>";
+    elseif ($valor_A < $valor_B)
+        echo "<h4>" . $valor_A . "" . $valor_B . "</h4>";
+    else
+        echo "<h4>" . $valor_B . "" . $valor_A . "</h4>";
+
 }
