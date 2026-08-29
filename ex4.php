@@ -16,7 +16,8 @@
                 <label for="num" class="form-label">Digite um número entre 1 e 12:</label>
                 <input type="number" id="num" name="num" class="form-control" required="">
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button><br>
+            <a href="index.html">Retornar ao início</a>
         </form>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     </div>
@@ -64,8 +65,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         case '11':
             $mes = 'Novembro';
             break;
-        default:
+        case '12':
             $mes = 'Dezembro';
+            break;
+        default:
+            $mes = null;
+            echo '<h4>Dígito incorreto, informe um número entre 1 e 12.';
             break;
     }
     echo "<h4>" . $mes . "</h4>";
