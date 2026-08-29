@@ -11,7 +11,7 @@
 <body>
     <div class="container py-3">
         <h1>Exercício 4 - Meses</h1>
-        <form method="post">
+        <form method="post" action="ex4.php">
             <div class="mb-3">
                 <label for="num" class="form-label">Digite um número entre 1 e 12:</label>
                 <input type="number" id="num" name="num" class="form-control" required="">

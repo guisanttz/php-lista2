@@ -11,7 +11,7 @@
 <body>
     <div class="container py-3">
         <h1>Exercício 3 - Desconto</h1>
-        <form method="post">
+        <form method="post" action="ex3.php">
             <div class="mb-3">
                 <label for="valorProduto" class="form-label">Insira o valor do produto:</label>
                 <input type="number" id="valorProduto" name="valorProduto" class="form-control" required="">
