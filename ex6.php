@@ -26,3 +26,20 @@
 </body>
 
 </html>
+
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $numero = $_POST['numero'];
+    $contador = 1;
+    $soma = 0;
+
+    while ($contador <= $numero) {
+        $soma += $contador;
+        $contador++;
+    }
+
+    echo "<h4>Soma de 1 até $numero: $soma</h4>";
+
+}
